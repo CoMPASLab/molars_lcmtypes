@@ -1,0 +1,11 @@
+package lcm_action_server.srv.get_result;
+
+struct get_result_response_t
+{
+    // Status of goal
+    lcm_action_server.msg.goal_status_t goal_status;
+
+    // User defined result
+    int32_t size;
+    byte result[size];
+}

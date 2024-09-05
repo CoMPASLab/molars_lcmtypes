@@ -1,0 +1,10 @@
+package lcm_action_server.msg;
+
+struct goal_info_t
+{
+    // Goal ID (UUID)
+    string goal_id;
+
+    // Time when goal was accepted
+    int64_t timestamp;
+}

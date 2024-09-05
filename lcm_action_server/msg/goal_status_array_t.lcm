@@ -1,0 +1,7 @@
+package lcm_action_server.msg;
+
+struct goal_status_array_t
+{
+    int32_t size;
+    goal_status_t status_list[size];
+}

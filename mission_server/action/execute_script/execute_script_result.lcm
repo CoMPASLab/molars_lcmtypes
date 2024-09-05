@@ -1,0 +1,5 @@
+package mission_server.action.execute_script;
+
+struct execute_script_result {
+    int64_t elapsed_time_milliseconds;
+}

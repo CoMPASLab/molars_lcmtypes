@@ -1,0 +1,19 @@
+package lcm_action_server.srv.send_goal;
+
+struct send_goal_response_t
+{
+    // The goal is rejected and will not be executed.
+    const int8_t REJECT = 1,
+
+    // The server accepts the goal, and is going to begin execution immediately.
+                 ACCEPT_AND_EXECUTE = 2,
+
+    // The server accepts the goal, and is going to execute it later.
+                 ACCEPT_AND_DEFER = 3;
+
+    // Status of the goal response
+    int8_t status;
+
+    // Goal info
+    lcm_action_server.msg.goal_info_t goal_info;
+}

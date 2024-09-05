@@ -1,0 +1,6 @@
+package lcm_action_server.srv.cancel_goal;
+
+struct cancel_goal_request_t
+{
+    lcm_action_server.msg.goal_info_t goal_info;
+}

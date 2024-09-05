@@ -1,0 +1,8 @@
+package nav_server.action.navigate_through_poses;
+
+struct navigate_through_poses_goal {
+    int32_t nposes;
+    geolcm.pose_t poses[nposes];
+
+    boolean relative;
+}

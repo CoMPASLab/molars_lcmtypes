@@ -1,0 +1,9 @@
+package nav_server.action.navigate_through_poses;
+
+struct navigate_through_poses_feedback {
+    // Current pose target index
+    int32_t current_pose_target_index;
+
+    // Current pose error
+    geolcm.pose_t error;
+}

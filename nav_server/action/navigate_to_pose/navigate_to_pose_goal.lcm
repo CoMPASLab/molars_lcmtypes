@@ -1,0 +1,12 @@
+package nav_server.action.navigate_to_pose;
+
+struct navigate_to_pose_goal {
+    // Goal pose
+    geolcm.pose_t pose;
+
+    // Planner
+    string planner_id;
+
+    // Controller
+    string controller_id;
+}

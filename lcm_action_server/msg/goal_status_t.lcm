@@ -1,0 +1,32 @@
+package lcm_action_server.msg;
+
+struct goal_status_t
+{
+    // Indicates status has not been properly set.
+    const int8_t STATUS_UNKNOWN   = 0,
+
+    // The goal has been accepted and is awaiting execution.
+                 STATUS_ACCEPTED  = 1,
+
+    // The goal is currently being executed by the action server.
+                 STATUS_EXECUTING = 2,
+
+    // The client has requested that the goal be canceled and the action server has
+    // accepted the cancel request.
+                 STATUS_CANCELING = 3,
+
+    // The goal was achieved successfully by the action server.
+                 STATUS_SUCCEEDED = 4,
+
+    // The goal was canceled after an external request from an action client.
+                 STATUS_CANCELED  = 5,
+
+    // The goal was terminated by the action server without an external request.
+                 STATUS_ABORTED   = 6;
+
+    // Goal info (contains ID and timestamp).
+    goal_info_t goal_info;
+
+    // Action goal state-machine status
+    int8_t status;
+}

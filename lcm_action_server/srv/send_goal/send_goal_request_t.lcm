@@ -1,0 +1,8 @@
+package lcm_action_server.srv.send_goal;
+
+struct send_goal_request_t
+{
+    string goal_id;
+    int32_t size;
+    byte goal[size];
+}

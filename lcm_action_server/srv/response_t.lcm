@@ -1,0 +1,11 @@
+package lcm_action_server.srv;
+
+struct response_t
+{
+	// Header
+	int64_t request_id;
+
+	// Encoded LCM response message payload
+	int32_t size;
+	byte message[size];
+}

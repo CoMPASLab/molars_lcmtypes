@@ -1,0 +1,9 @@
+package control_server.msg;
+
+struct pose_stamped_t
+{
+    // A pose with a reference coordinate frame and timestamp
+
+    stdlcm.header_t header;
+    geolcm.pose_t pose;
+}

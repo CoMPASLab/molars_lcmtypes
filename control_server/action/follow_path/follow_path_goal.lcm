@@ -1,0 +1,9 @@
+package control_server.action.follow_path;
+
+struct follow_path_goal
+{
+    control_server.msg.path_t path;
+    string controller_id;
+    string goal_checker_id;
+    string progress_checker_id;
+}

@@ -1,0 +1,36 @@
+package lcm_action_server.srv.cancel_goal;
+
+struct cancel_goal_response_t
+{
+    // Indicates the request was accepted without any errors.
+    // 
+    // One or more goals have transitioned to the CANCELING state. The
+    // goals_canceling list is not empty.
+    const int8_t
+    ERROR_NONE=0,
+
+    // Indicates the request was rejected.
+    // 
+    // No goals have transitioned to the CANCELING state. The goals_canceling list is
+    // empty.
+    ERROR_REJECTED=1,
+
+    // Indicates the requested goal ID does not exist.
+    // 
+    // No goals have transitioned to the CANCELING state. The goals_canceling list is
+    // empty.
+    ERROR_UNKNOWN_GOAL_ID=2,
+
+    // Indicates the goal is not cancelable because it is already in a terminal state.
+    // 
+    // No goals have transitioned to the CANCELING state. The goals_canceling list is
+    // empty.
+    ERROR_GOAL_TERMINATED=3;
+
+    // Return code, see above definitions.
+    int8_t return_code;
+
+    // Goals that accepted the cancel request.
+    int32_t goals_canceling_size;
+    lcm_action_server.msg.goal_info_t goals_canceling[goals_canceling_size];
+}

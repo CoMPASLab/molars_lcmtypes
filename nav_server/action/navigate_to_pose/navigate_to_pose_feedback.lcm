@@ -1,0 +1,6 @@
+package nav_server.action.navigate_to_pose;
+
+struct navigate_to_pose_feedback {
+    // Current pose error
+    geolcm.pose_t error;
+}

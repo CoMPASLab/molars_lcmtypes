@@ -1,0 +1,4 @@
+package control_server.srv.get_state;
+
+struct get_state_request {
+}

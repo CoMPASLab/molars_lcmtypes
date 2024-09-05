@@ -1,0 +1,6 @@
+package nav_server.action.navigate_through_poses;
+
+struct navigate_through_poses_result {
+    // Elapsed time
+    int64_t elapsed_time_milliseconds;
+}

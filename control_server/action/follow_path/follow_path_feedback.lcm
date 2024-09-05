@@ -1,0 +1,7 @@
+package control_server.action.follow_path;
+
+struct follow_path_feedback
+{
+    float distance_to_goal;
+    float speed;
+}

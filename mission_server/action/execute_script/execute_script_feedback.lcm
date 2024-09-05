@@ -1,0 +1,5 @@
+package mission_server.action.execute_script;
+
+struct execute_script_feedback {
+    int32_t current_line_index;
+}
