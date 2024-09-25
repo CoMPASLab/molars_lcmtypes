@@ -1,0 +1,4 @@
+package mission_server.srv.get_mission_status;
+
+struct get_mission_status_request {
+}
