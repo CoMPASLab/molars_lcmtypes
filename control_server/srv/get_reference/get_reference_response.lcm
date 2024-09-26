@@ -1,0 +1,5 @@
+package control_server.srv.get_reference;
+
+struct get_reference_response {
+    navlcm.odometry_t reference;
+}

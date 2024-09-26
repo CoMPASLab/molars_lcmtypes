@@ -1,0 +1,4 @@
+package control_server.srv.get_reference;
+
+struct get_reference_request {
+}
