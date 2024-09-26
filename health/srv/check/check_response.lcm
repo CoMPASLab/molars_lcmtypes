@@ -1,0 +1,10 @@
+package health.srv.check;
+
+struct check_response {
+    int64_t pid;
+    int8_t status;
+    string message;
+
+    const int8_t STATUS_HEALTHY = 0;
+    const int8_t STATUS_DEGRADED = 1;
+}

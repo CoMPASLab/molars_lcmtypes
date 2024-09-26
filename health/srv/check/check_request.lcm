@@ -1,0 +1,4 @@
+package health.srv.check;
+
+struct check_request {
+}
