@@ -1,0 +1,5 @@
+package nav_server.action.navigate;
+
+struct navigate_result {
+    int64_t elapsed_time_milliseconds;
+}

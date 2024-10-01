@@ -1,0 +1,4 @@
+package nav_server.action.navigate;
+
+struct navigate_feedback {
+}
