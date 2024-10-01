@@ -2,6 +2,4 @@ package mission_server.action.execute_script;
 
 struct execute_script_goal {
     string script;
-
-    boolean relative;
 }
