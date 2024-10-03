@@ -1,5 +1,5 @@
 package mission_server.srv.get_mission_status;
 
 struct get_mission_status_response {
-    string current_mission;
+    string current_goal_id;
 }
