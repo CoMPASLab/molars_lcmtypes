@@ -1,0 +1,4 @@
+package control_server.srv.stop;
+
+struct stop_request {
+}
