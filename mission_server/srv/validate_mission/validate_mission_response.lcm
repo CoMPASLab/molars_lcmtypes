@@ -1,0 +1,15 @@
+package mission_server.srv.validate_mission;
+
+struct validate_mission_response {
+    boolean valid;
+    string message;
+
+    int32_t num_warnings;
+    string warnings[num_warnings];
+
+    int32_t num_errors;
+    string errors[num_errors];
+
+    int32_t num_suggestions;
+    string suggestions[num_suggestions];
+}
