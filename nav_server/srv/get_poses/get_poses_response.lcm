@@ -1,0 +1,6 @@
+package nav_server.srv.get_poses;
+
+struct get_poses_response {
+    int32_t num_poses;
+    geolcm.pose_t poses[num_poses];
+}

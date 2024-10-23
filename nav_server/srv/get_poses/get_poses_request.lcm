@@ -1,0 +1,4 @@
+package nav_server.srv.get_poses;
+
+struct get_poses_request {
+}
