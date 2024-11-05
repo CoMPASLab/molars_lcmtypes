@@ -1,0 +1,5 @@
+package control_server.srv.pause;
+
+struct pause_request {
+    boolean state;
+}
