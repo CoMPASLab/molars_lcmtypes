@@ -1,0 +1,7 @@
+package nav_server.msg;
+
+struct waypoint {
+    string uuid;
+    geolcm.pose_t pose;
+    boolean reached;
+}

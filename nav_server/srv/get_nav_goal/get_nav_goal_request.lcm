@@ -1,0 +1,4 @@
+package nav_server.srv.get_nav_goal;
+
+struct get_nav_goal_request {
+}
