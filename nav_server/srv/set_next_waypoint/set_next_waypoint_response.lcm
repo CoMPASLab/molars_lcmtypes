@@ -1,0 +1,5 @@
+package nav_server.srv.set_next_waypoint;
+
+struct set_next_waypoint_response {
+    nav_server.msg.nav_goal goal;
+}

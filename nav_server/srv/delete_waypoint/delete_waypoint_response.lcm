@@ -1,0 +1,5 @@
+package nav_server.srv.delete_waypoint;
+
+struct delete_waypoint_response {
+    nav_server.msg.nav_goal goal;
+}

@@ -1,8 +1,5 @@
 package nav_server.srv.get_nav_goal;
 
 struct get_nav_goal_response {
-    int32_t num_waypoints;
-    nav_server.msg.waypoint waypoints[num_waypoints];
-
-    string current_uuid;
+    nav_server.msg.nav_goal goal;
 }
