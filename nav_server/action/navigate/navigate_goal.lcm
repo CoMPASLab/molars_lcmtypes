@@ -8,5 +8,6 @@ struct navigate_goal {
 
     stdlcm.msg_t parameters;
 
-    const int8_t TYPE_PATH = 0; 
+    const int8_t TYPE_PATH = 0;
+    const int8_t TYPE_SCRIPT = 1;
 }
