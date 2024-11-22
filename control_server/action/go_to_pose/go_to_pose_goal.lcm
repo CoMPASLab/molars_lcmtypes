@@ -5,4 +5,5 @@ struct go_to_pose_goal
     geolcm.pose_t pose;
     boolean preempt;
     boolean ignore_z;
+    geolcm.twist_t twist_max;
 }

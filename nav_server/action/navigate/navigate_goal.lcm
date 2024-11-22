@@ -7,6 +7,7 @@ struct navigate_goal {
     geolcm.pose_t reference_poses[num_reference_poses];
 
     stdlcm.msg_t parameters;
+    geolcm.twist_t twist_max;
 
     const int8_t TYPE_PATH = 0;
     const int8_t TYPE_SCRIPT = 1;
