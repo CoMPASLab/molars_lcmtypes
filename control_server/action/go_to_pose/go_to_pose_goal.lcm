@@ -3,7 +3,15 @@ package control_server.action.go_to_pose;
 struct go_to_pose_goal
 {
     geolcm.pose_t pose;
-    boolean preempt;
-    boolean ignore_z;
     geolcm.twist_t twist_max;
+    boolean preempt;
+
+    boolean controlled_linear_axes[3];
+    double linear_epsilon;
+
+    boolean controlled_angular_axes[3];
+    double angular_epsilon_rad;
+
+    double linear_horizon;
+    double angular_horizon;
 }
