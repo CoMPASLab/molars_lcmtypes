@@ -1,5 +1,5 @@
 package control_server.srv.get_state;
 
 struct get_state_response {
-    navlcm.odometry_t state;
+    navlcm.odometry_light_t state;
 }
