@@ -1,0 +1,6 @@
+package nav_server.srv.edit_waypoint;
+
+struct edit_waypoint_request {
+    string uuid;
+    geolcm.pose_t pose;
+}

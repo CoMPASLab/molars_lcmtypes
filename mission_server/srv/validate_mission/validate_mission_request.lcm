@@ -1,0 +1,5 @@
+package mission_server.srv.validate_mission;
+
+struct validate_mission_request {
+    string script;
+}

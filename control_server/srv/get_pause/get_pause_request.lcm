@@ -1,0 +1,4 @@
+package control_server.srv.get_pause;
+
+struct get_pause_request {
+}

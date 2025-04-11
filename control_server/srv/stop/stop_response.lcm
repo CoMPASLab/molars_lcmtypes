@@ -1,5 +1,5 @@
 package control_server.srv.stop;
 
 struct stop_response {
-    navlcm.odometry_t reference;
+    navlcm.odometry_light_t reference;
 }

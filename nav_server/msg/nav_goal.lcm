@@ -1,0 +1,8 @@
+package nav_server.msg;
+
+struct nav_goal {
+    int32_t num_waypoints;
+    nav_server.msg.waypoint waypoints[num_waypoints];
+
+    string current_uuid;
+}

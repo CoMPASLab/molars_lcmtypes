@@ -1,0 +1,5 @@
+package control_server.srv.get_global_transform;
+
+struct get_global_transform_response {
+    geolcm.transform_t transform;
+}
