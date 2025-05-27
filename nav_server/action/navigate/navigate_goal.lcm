@@ -3,6 +3,8 @@ package nav_server.action.navigate;
 struct navigate_goal {
     int8_t type;
 
+    geolcm.pose_t reference_frame;
+    
     int32_t num_reference_poses;
     geolcm.pose_t reference_poses[num_reference_poses];
 
