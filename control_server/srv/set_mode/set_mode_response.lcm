@@ -1,0 +1,4 @@
+package control_server.srv.set_mode;
+
+struct set_mode_response {
+}

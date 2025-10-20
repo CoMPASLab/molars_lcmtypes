@@ -1,0 +1,15 @@
+package control_server.srv.set_mode;
+
+struct set_mode_request {
+    // Desired control mode.
+    int32_t mode;
+
+    // Standard (reserved) control modes.
+    const int32_t OPEN_LOOP = 0;
+    const int32_t XYZRPH = 1;
+    const int32_t XYZRPH_ALTITUDE = 2;
+    const int32_t ZRPH = 3;
+    const int32_t XYZH = 4;
+    const int32_t ZRPH_ALTITUDE = 5;
+    const int32_t XYZH_ALTITUDE = 6;
+}
