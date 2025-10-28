@@ -1,0 +1,10 @@
+package control_server.action.go_to_pose_los;
+
+struct go_to_pose_los_goal
+{
+    geolcm.point_t waypoint_start;
+    geolcm.point_t waypoint_end;
+    geolcm.vector3_t velocity;
+    double linear_epsilon;
+    double altitude;
+}
