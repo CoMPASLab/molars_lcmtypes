@@ -7,4 +7,5 @@ struct go_to_pose_los_goal
     geolcm.vector3_t velocity;
     double linear_epsilon;
     double range;
+    boolean range_valid;
 }
