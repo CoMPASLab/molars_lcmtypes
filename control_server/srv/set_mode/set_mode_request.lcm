@@ -3,6 +3,8 @@ package control_server.srv.set_mode;
 struct set_mode_request {
     // Desired control mode.
     int32_t mode;
+    // Flag to keep the previous mode reference
+    boolean keep_reference;
 
     // Standard (reserved) control modes.
     const int32_t OPEN_LOOP = 0;
