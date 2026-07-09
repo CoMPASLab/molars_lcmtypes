@@ -4,6 +4,8 @@ struct go_to_pose_goal
 {
     geolcm.pose_t pose;
     geolcm.twist_t twist_max;
+    double range;
+    boolean range_valid;
     boolean preempt;
 
     boolean controlled_linear_axes[3];
