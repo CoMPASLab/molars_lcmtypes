@@ -1,6 +1,7 @@
 import argparse
 import os
 
+
 def generate_template_files(root: str, type_: str, target: str):
     # Define base directory and file paths based on type
     if type_ == "msg":
@@ -8,7 +9,7 @@ def generate_template_files(root: str, type_: str, target: str):
         dir_path = os.path.join(root, "msg")
         file_paths = [os.path.join(dir_path, f"{target}.lcm")]
         file_stems = [target]
-        
+
     elif type_ == "srv":
         package_name = f"{root}.srv.{target}"
         dir_path = os.path.join(root, "srv", target)
@@ -17,7 +18,7 @@ def generate_template_files(root: str, type_: str, target: str):
             os.path.join(dir_path, f"{target}_response.lcm")
         ]
         file_stems = [f"{target}_request", f"{target}_response"]
-        
+
     elif type_ == "action":
         package_name = f"{root}.action.{target}"
         dir_path = os.path.join(root, "action", target)
@@ -27,7 +28,7 @@ def generate_template_files(root: str, type_: str, target: str):
             os.path.join(dir_path, f"{target}_feedback.lcm")
         ]
         file_stems = [f"{target}_goal", f"{target}_result", f"{target}_feedback"]
-        
+
     else:
         raise ValueError("Type must be one of 'msg', 'srv', or 'action'.")
 
@@ -47,7 +48,7 @@ def main():
     parser.add_argument("type", type=str, choices=["msg", "srv", "action"], help="The message type.")
     parser.add_argument("target", type=str, help="The target message name.")
     args = parser.parse_args()
-    
+
     generate_template_files(args.root, args.type, args.target)
 
 
