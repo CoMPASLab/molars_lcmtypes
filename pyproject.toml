@@ -1,6 +1,6 @@
 [project]
 name = "molars-lcmtypes"
-version = "0.0.0"
+version = "0.1.0"
 description = "MOLARS LCM types"
 readme = "README.md"
 license = { file = "LICENSE.txt" }
